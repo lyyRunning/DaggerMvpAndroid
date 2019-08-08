@@ -27,8 +27,12 @@ public abstract  class BaseMainModule {
     /**
      * TwoActivity
      * @return
+     * TwoActivityModule类提供的对象的注入
+     * TwoActivityModule2接口，提供TwoPresenter和TwoActivity和对象的注入
+     * 将 Present 的关联可以放在TwoActivityModule类下面,也可以放在TwoActivityModuleInterface.class接口中
+     * （我喜欢放在TwoActivityModule下，一个类）
      */
     @ActivityScope
-    @ContributesAndroidInjector(modules = TwoActivityModule.class)
+    @ContributesAndroidInjector(modules = {TwoActivityModule.class,TwoActivityModuleInterface.class})
     abstract TwoActivity contributeTwoActivityInject();
 }

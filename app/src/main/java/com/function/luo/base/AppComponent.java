@@ -2,8 +2,12 @@ package com.function.luo.base;
 
 
 
-import com.function.luo.scope.ActivityScope;
+import com.function.luo.base.di.ApiServiceModule;
+import com.function.luo.base.di.HttpIntercepterModel;
+import com.function.luo.base.di.RetrofitModule;
+import com.function.luo.base.di.SingleMouble;
 
+import javax.inject.Singleton;
 
 import dagger.BindsInstance;
 import dagger.Component;
@@ -17,7 +21,9 @@ import dagger.android.support.AndroidSupportInjectionModule;
  * 整个 APP统一的注入器
  * AndroidSupportInjectionModule.class必须包含
  */
-@Component(modules = {AndroidSupportInjectionModule.class,AppModule.class,SingleMouble.class})
+@Singleton
+@Component(modules = {AndroidSupportInjectionModule.class,AppModule.class,SingleMouble.class,
+        HttpIntercepterModel.class,RetrofitModule.class, ApiServiceModule.class})
 public interface AppComponent extends AndroidInjector<MyApplication>{
     @Component.Builder
     interface Builder {

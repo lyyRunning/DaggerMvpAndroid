@@ -1,8 +1,9 @@
 package com.function.luo.contract;
 
 
-import com.function.luo.base.BasePresenter;
-import com.function.luo.base.BaseView;
+
+import com.function.luo.base.di.BasePresenter;
+import com.function.luo.base.di.BaseView;
 import com.function.luo.bean.LoginBean;
 
 
@@ -29,10 +30,10 @@ public class TwoContract {
         @Override
         void hideLoading();
 
-        @Override
-        void onError(Throwable throwable);
 
         void onSuccess(LoginBean bean);
+
+        void onNetSuccess(String msg);
     }
 
 
@@ -47,5 +48,11 @@ public class TwoContract {
          * @param password
          */
        public abstract  void login(String username, String password);
+
+
+        /**
+         * 网络请求
+         */
+        public abstract  void requestNetWork();
     }
 }

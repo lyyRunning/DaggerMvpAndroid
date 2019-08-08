@@ -1,8 +1,11 @@
-package com.function.luo.base;
+package com.function.luo.base.di;
 
 import android.content.Context;
 
+import com.function.luo.base.MyApplication;
 import com.function.luo.scope.ActivityScope;
+
+import javax.inject.Singleton;
 
 import dagger.Module;
 import dagger.Provides;
@@ -14,7 +17,7 @@ import dagger.Provides;
 public abstract class SingleMouble {
 
     @Provides
-    @ActivityScope
+    @Singleton
     static Context provideContext(MyApplication application) {
         return application.getApplicationContext();
     }

@@ -1,4 +1,4 @@
-package com.function.luo.base;
+package com.function.luo.base.di;
 
 /**
  * Created by luo on 2019/8/7.

@@ -1,5 +1,4 @@
-package com.function.luo.base;
-
+package com.function.luo.base.di;
 
 
 /**

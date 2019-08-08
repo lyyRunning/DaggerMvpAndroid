@@ -1,7 +1,7 @@
 package com.function.luo.base;
 
-import com.function.luo.activity.MainActivity;
 import com.function.luo.module.BaseMainModule;
+import com.function.luo.module.TwoActivityModule;
 
 import dagger.Module;
 

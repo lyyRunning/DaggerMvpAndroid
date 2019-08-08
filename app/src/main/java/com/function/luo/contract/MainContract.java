@@ -1,9 +1,9 @@
 package com.function.luo.contract;
 
 
-import com.function.luo.base.BasePresenter;
-import com.function.luo.base.BaseView;
 
+import com.function.luo.base.di.BasePresenter;
+import com.function.luo.base.di.BaseView;
 import com.function.luo.bean.LoginBean;
 
 

@@ -6,7 +6,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.function.luo.base.BaseMvpActivity;
+
+import com.function.luo.base.di.BaseMvpActivity;
 import com.function.luo.bean.LoginBean;
 import com.function.luo.contract.MainContract;
 import com.function.luo.daggermvpandroid.R;

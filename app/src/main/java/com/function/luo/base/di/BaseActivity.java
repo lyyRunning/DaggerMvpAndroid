@@ -1,4 +1,4 @@
-package com.function.luo.base;
+package com.function.luo.base.di;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
